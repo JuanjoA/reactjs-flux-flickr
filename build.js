@@ -42,15 +42,12 @@ var _ImageActions2 = _interopRequireDefault(_ImageActions);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /*
-setInterval( () => {
-    ImageActions.fetchList(),
-    console.log('fetcheando...')
-}, 5000);
-*/
-
-/*
  *   Module dependencies
  */
+
+setInterval(function () {
+  _ImageActions2.default.fetchList(), console.log('fetcheando...');
+}, 5000);
 
 _reactDom2.default.render(_react2.default.createElement(_ImageGrid2.default, null), document.getElementById('container'));
 
