@@ -2,6 +2,7 @@ Este es un simple ejemplo de uso de reactJS + Flux para obtener datos de una API
 presentarlos.
 
 Carga de entre varias categorías especificadas en el código imágenes de Flickr, refrescando cada 5sg.
+Al hacer click sobre alguna imagen, se abre nueva pestaña y redirige a Flickr.
 
 Para probarlo, simplemente abrir el index.html, que carga el build.js con el javascript necesario.
 
