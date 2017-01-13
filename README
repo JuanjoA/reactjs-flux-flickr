@@ -36,3 +36,5 @@ demasiado claros.
 
             $ npm run buildwebpack
             $ npm run dev
+
+P.d: Esta app corresponde al vídeo tutorial de Platzi: https://www.youtube.com/watch?v=D1gWyGWKjRY
