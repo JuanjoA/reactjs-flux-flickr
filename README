@@ -1,3 +1,19 @@
+Este es un simple ejemplo de uso de reactJS + Flux para obtener datos de una API y
+presentarlos.
+
+Para probarlo, simplemente abrir el index.html, que carga el build.js con el javascript necesario.
+
+Si lo editas, tienes que instalar las dependencias y transpilar de nuevo para generar el build.js:
+
+    $ npm install 
+    $ npm run build
+
+Ya puedes abrir el index.html y ver los cambios.
+
+
+
+Notas:
+
 * verifica que tienes instaladas las dependencias antes de usarlas, los errores no son
 demasiado claros.
 
@@ -6,12 +22,9 @@ demasiado claros.
     - Webpack lo pongo en public/bundle.js
 
 - browserify usa        $ npm run build
-    definido en package..json
-    se supone que debería habris una shell que permite hacer open index.html
-    y abre el navegador con la aplicación.
-
+    definido en package.json
+    
 - webpack usa .babelrc y webpack.config.js además de tener instaladas las dependencias.
-    Para transpilary agrupar en un sólo archivo.js las dependencias:
 
             $ ./node_modules/.bin/webpack -d 
             $ ./node_modules/.bin/webpack -d --watch
@@ -20,8 +33,3 @@ demasiado claros.
 
             $ npm run buildwebpack
             $ npm run dev
-
-
-
-
-Tal y como están configurados (apoyados en babel), pasan ES6 a ES5.
