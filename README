@@ -1,0 +1,27 @@
+* verifica que tienes instaladas las dependencias antes de usarlas, los errores no son
+demasiado claros.
+
+* usa browserify, pero también tiene webpack, puede probar ambos.
+    - Ojo al build.js que carga el index.html, por defecto apunta al de browserify.
+    - Webpack lo pongo en public/bundle.js
+
+- browserify usa        $ npm run build
+    definido en package..json
+    se supone que debería habris una shell que permite hacer open index.html
+    y abre el navegador con la aplicación.
+
+- webpack usa .babelrc y webpack.config.js además de tener instaladas las dependencias.
+    Para transpilary agrupar en un sólo archivo.js las dependencias:
+
+            $ ./node_modules/.bin/webpack -d 
+            $ ./node_modules/.bin/webpack -d --watch
+
+        O como los he metido en el package.json:
+
+            $ npm run buildwebpack
+            $ npm run dev
+
+
+
+
+Tal y como están configurados (apoyados en babel), pasan ES6 a ES5.
